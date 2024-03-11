@@ -34,7 +34,10 @@ service vendor.nfc-hal-1-2 /vendor/bin/hw/android.hardware.nfc@1.2-service_HYBRI
 service lmkd /system/bin/lmkd_HYBRIS_DISABLED
 
 # Lipstick doesnt start without this?
-service vold /system/bin/vold_HYBRIS_DISABLED
+service vold /system/bin/apexd_HYBRIS_DISABLED
+
+service apexd /system/bin/vold_HYBRIS_DISABLED
+     override
 
 service wificond /system/bin/wificond_HYBRIS_DISABLED
 

@@ -14,6 +14,7 @@ Requires: droid-config-miatoll-flashing
 Requires: droid-config-miatoll-bluez5
 Requires: droid-hal-version-miatoll
 Requires: droid-hal-miatoll-detritus
+Requires: droid-system-miatoll
 
 # Hybris packages
 Requires: libhybris-libEGL
@@ -31,6 +32,10 @@ Requires: sailfish-devicelock-fpd
 # Telephony
 Requires: ofono-ril-binder-plugin
 Requires: dummy_netd
+
+Provides: ofono-configs
+Obsoletes: ofono-configs-mer
+Obsoletes: ofono-configs-binder
 
 # For torch
 Requires: jolla-settings-system-flashlight
@@ -69,9 +74,8 @@ Requires: gstreamer1.0
 Requires: nemo-gstreamer1.0-interfaces
 # For hybris devices with droidmedia, see HADK pdf for more information
 Requires: gstreamer1.0-droid
-Requires: gstreamer1.0-droid-devel
-Requires: gstreamer1.0-droid-tools
 Requires: gmp-droid
+Provides: gecko-camera-droid-plugin = 0.1.4
 
 # This is needed for notification LEDs
 Requires: mce-plugin-libhybris
@@ -86,9 +90,9 @@ Requires: rfkill
 # Requires: jolla-devicelock-daemon-encsfa
 
 # Enable home encryption
-#Requires: droid-hwcrypt
-#Requires: sailfish-device-encryption-community
-#Requires: sailfish-device-encryption-community-droid
+Requires: droid-hwcrypt
+Requires: sailfish-device-encryption-community
+Requires: sailfish-device-encryption-community-droid
 
 # For GPS
 Requires: geoclue-provider-hybris
@@ -109,7 +113,6 @@ Requires: nfcd-binder-plugin
 Requires: parse-android-dynparts
 
 # Aliendalvik
-
 #Requires: lxc
 #Requires: libqt5sparql-tracker-direct
 
