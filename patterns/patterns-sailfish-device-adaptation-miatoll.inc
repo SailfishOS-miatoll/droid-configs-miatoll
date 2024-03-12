@@ -28,6 +28,7 @@ Requires: bluebinder
 
 #Fingerprintd
 Requires: sailfish-devicelock-fpd
+Requires: droid-biometry-fp
 
 # Telephony
 Requires: ofono-ril-binder-plugin
@@ -108,9 +109,6 @@ Requires: libgbinder-radio
 # These plugins are mutually exclusive, you need to pick one:
 Requires: nfcd-binder-plugin
 # Requires: nfcd-pn54x-plugin
-
-# For mount partitions
-Requires: parse-android-dynparts
 
 # Aliendalvik
 #Requires: lxc

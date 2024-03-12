@@ -1,19 +1,13 @@
 #/bin/sh
 
-# Mount super.img partitions using parse-android-dynparts.
-#losetup -r /dev/loop0 /dev/sda17
-#dmsetup create --concise "$(parse-android-dynparts /dev/loop0)"
-mkdir -p /system_root /system /vendor /product /system_ext /dsp /bt_firmware /persist /firmware /metadata /firmware_mnt /cache /data/cache
+mkdir -p /vendor /system /product /system_ext /dsp /bt_firmware /persist /firmware /metadata /firmware_mnt /cache /data/cache
+mv /system /system_root
 
-#mount -o ro,barrier=1,discard  /dev/mapper/dynpart-system  /system_root
 mount -o bind /system_root/system /system
-#mount -o ro,barrier=1,discard /dev/mapper/dynpart-product  /product
-#mount -o ro,barrier=1,discard /dev/mapper/dynpart-system_ext /system_ext
-#mount -o ro,barrier=1,discard /dev/mapper/dynpart-vendor  /vendor
 
 # Others partitions mounting.
-#mount -v -o loop,ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337 -t vfat  /dev/sde4       /vendor/firmware_mnt
-#mount -v -o loop,ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337 -t vfat  /dev/sde5       /vendor/bt_firmware
+mount -v -o loop,ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337 -t vfat  /dev/sde4       /vendor/firmware_mnt
+mount -v -o loop,ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337 -t vfat  /dev/sde5       /vendor/bt_firmware
 mount -o noatime,nosuid,nodev,discard    /dev/sda12   /metadata
 mount -o nosuid,noatime,nodev,barrier=1 /dev/block/bootdevice/by-name/cache /cache
 
