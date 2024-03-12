@@ -27,8 +27,8 @@ Requires: libhybris-libvibrator
 Requires: bluebinder
 
 #Fingerprintd
-Requires: sailfish-devicelock-fpd
-Requires: droid-biometry-fp
+#Requires: sailfish-devicelock-fpd
+#Requires: droid-biometry-fp
 
 # Telephony
 Requires: ofono-ril-binder-plugin
@@ -91,9 +91,9 @@ Requires: rfkill
 # Requires: jolla-devicelock-daemon-encsfa
 
 # Enable home encryption
-Requires: droid-hwcrypt
-Requires: sailfish-device-encryption-community
-Requires: sailfish-device-encryption-community-droid
+#Requires: droid-hwcrypt
+#Requires: sailfish-device-encryption-community
+#Requires: sailfish-device-encryption-community-droid
 
 # For GPS
 Requires: geoclue-provider-hybris

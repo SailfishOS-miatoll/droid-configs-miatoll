@@ -1,9 +1,11 @@
 #/bin/sh
 
-mkdir -p /vendor /system /product /system_ext /dsp /bt_firmware /persist /firmware /metadata /firmware_mnt /cache /data/cache
 mv /system /system_root
+mkdir -p /vendor /system /product /system_ext /dsp /bt_firmware /persist /firmware /metadata /firmware_mnt /cache /data/cache
 
 mount -o bind /system_root/system /system
+
+mount --bind /usr/libexec/droid-hybris/system/lib64 /odm/lib64
 
 # Others partitions mounting.
 mount -v -o loop,ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337 -t vfat  /dev/sde4       /vendor/firmware_mnt
@@ -24,6 +26,13 @@ mount -o bind /vendor/firmware /firmware
 mount -o bind /vendor/bt_firmware /bt_firmware
 mount -o bind /vendor/dsp /dsp
 
+# Shittyfixes
+#touch /odm/lib64/libicui18n.so
+#touch /odm/lib64/libandroidicu.so
+#touch /odm/lib64/libicuuc.so
+#mount --bind /apex/com.android.art/lib64/libandroidicu.so /odm/lib64/libandroidicu.so
+#mount --bind /apex/com.android.art/lib64/libicuuc.so /odm/lib64/libicuuc.so
+#mount --bind /apex/com.android.art/lib64/libicui18n.so /odm/lib64/libicui18n.so
 
 # Sound fix.
 #mount --bind /etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml
@@ -34,4 +43,3 @@ mount -o bind /vendor/dsp /dsp
 
 # Fix stune errors
 #sh /usr/bin/droid/stune-fix.sh
-
