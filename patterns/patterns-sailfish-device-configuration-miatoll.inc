@@ -17,6 +17,9 @@ Requires: sailfish-content-graphics-z%{icon_res}
 # For multi-SIM devices
 Requires: jolla-settings-networking-multisim
 
+# Flashlight
+Requires: jolla-settings-system-flashlight
+
 # For devices which support NFC
 Requires: jolla-settings-system-nfc
 Requires: nfcd-dbuslog-plugin
@@ -41,6 +44,7 @@ Requires: mapplauncherd-booster-silica-qt5-media
 
 # Add pre-installed some jolla/sailfish apps
 Requires: harbour-storeman
+Requires: fish
 
 %description -n patterns-sailfish-device-configuration-miatoll
 Pattern with packages for miatoll configurations

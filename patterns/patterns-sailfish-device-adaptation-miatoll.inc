@@ -14,7 +14,6 @@ Requires: droid-config-miatoll-flashing
 Requires: droid-config-miatoll-bluez5
 Requires: droid-hal-version-miatoll
 Requires: droid-hal-miatoll-detritus
-Requires: droid-system-miatoll
 
 # Hybris packages
 Requires: libhybris-libEGL
@@ -27,8 +26,9 @@ Requires: libhybris-libvibrator
 Requires: bluebinder
 
 #Fingerprintd
-#Requires: sailfish-devicelock-fpd
-#Requires: droid-biometry-fp
+Requires: sailfish-fpd-community
+Requires: sailfish-devicelock-fpd
+Requires: droid-biometry-fp
 
 # Telephony
 Requires: ofono-ril-binder-plugin
@@ -45,7 +45,7 @@ Requires: jolla-settings-system-flashlight
 Requires: sailfish-connman-plugin-suspend
 
 # Sensors
-Requires: hybris-libsensorfw-qt5-binder
+Requires: hybris-libsensorfw-qt5
 
 # Vibra
 Requires: qt5-feedback-haptics-ffmemless
@@ -76,7 +76,7 @@ Requires: nemo-gstreamer1.0-interfaces
 # For hybris devices with droidmedia, see HADK pdf for more information
 Requires: gstreamer1.0-droid
 Requires: gmp-droid
-Provides: gecko-camera-droid-plugin = 0.1.4
+Provides: gecko-camera-droid-plugin
 
 # This is needed for notification LEDs
 Requires: mce-plugin-libhybris
@@ -88,7 +88,7 @@ Requires: usb-moded
 Requires: rfkill
 
 # enable device lock and allow to select untrusted software
-# Requires: jolla-devicelock-daemon-encsfa
+Requires: jolla-devicelock-daemon-encsfa
 
 # Enable home encryption
 #Requires: droid-hwcrypt
@@ -100,8 +100,8 @@ Requires: geoclue-provider-hybris
 
 # For FM radio on some QCOM devices
 #Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
-Requires: jolla-mediaplayer-radio
-Requires: libgbinder-radio
+#Requires: jolla-mediaplayer-radio
+#Requires: libgbinder-radio
 
 # NFC support
 # 1. binder plugin requires Android 8 or a newer base
@@ -116,6 +116,12 @@ Requires: nfcd-binder-plugin
 
 # Usb-Tethering
 Requires: usb-moded-connection-sharing-android-connman-config
+
+# Tools
+Requires: libgbinder-tools
+
+# Splash screen
+Requires: yamuisplash
 
 %description -n patterns-sailfish-device-adaptation-miatoll
 Pattern with packages for miatoll HW Adaptation

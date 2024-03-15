@@ -26,4 +26,3 @@ StartLimitBurst=2
 
 [Install]
 WantedBy=graphical.target
-
