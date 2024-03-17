@@ -209,9 +209,9 @@ rm -rf updater/
 
 # Calculate some checksums for the generated zip
 printf "[hybris-installer] Calculating MD5, SHA1 & SHA256 checksums for '$DST_PKG.zip'..."
-md5sum $DST_PKG.zip > $DST_PKG.zip.md5sum
-sha1sum $DST_PKG.zip > $DST_PKG.zip.sha1sum
-sha256sum $DST_PKG.zip > $DST_PKG.zip.sha256sum
+#md5sum $DST_PKG.zip > $DST_PKG.zip.md5sum
+#sha1sum $DST_PKG.zip > $DST_PKG.zip.sha1sum
+#sha256sum $DST_PKG.zip > $DST_PKG.zip.sha256sum
 echo " DONE!"
 
 popd # hadk source tree

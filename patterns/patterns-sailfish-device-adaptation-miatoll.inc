@@ -27,7 +27,6 @@ Requires: bluebinder
 
 #Fingerprintd
 Requires: sailfish-fpd-community
-Requires: sailfish-devicelock-fpd
 Requires: droid-biometry-fp
 
 # Telephony
@@ -45,7 +44,7 @@ Requires: jolla-settings-system-flashlight
 Requires: sailfish-connman-plugin-suspend
 
 # Sensors
-Requires: hybris-libsensorfw-qt5
+Requires: hybris-libsensorfw-qt5-binder
 
 # Vibra
 Requires: qt5-feedback-haptics-ffmemless
@@ -91,17 +90,17 @@ Requires: rfkill
 Requires: jolla-devicelock-daemon-encsfa
 
 # Enable home encryption
-#Requires: droid-hwcrypt
-#Requires: sailfish-device-encryption-community
-#Requires: sailfish-device-encryption-community-droid
+# Requires: droid-hwcrypt
+# Requires: sailfish-device-encryption-community
+# Requires: sailfish-device-encryption-community-droid
 
 # For GPS
 Requires: geoclue-provider-hybris
 
 # For FM radio on some QCOM devices
 #Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
-#Requires: jolla-mediaplayer-radio
-#Requires: libgbinder-radio
+Requires: jolla-mediaplayer-radio
+Requires: libgbinder-radio
 
 # NFC support
 # 1. binder plugin requires Android 8 or a newer base
@@ -121,7 +120,7 @@ Requires: usb-moded-connection-sharing-android-connman-config
 Requires: libgbinder-tools
 
 # Splash screen
-Requires: yamuisplash
+# Requires: yamuisplash
 
 %description -n patterns-sailfish-device-adaptation-miatoll
 Pattern with packages for miatoll HW Adaptation

@@ -1,4 +1,4 @@
-service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
+service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     setenv UEVENT_NETLINK_GROUPS 0xFFFFFFFD
     setenv LD_PRELOAD /usr/libexec/droid-hybris/system/lib64/libcutils.so
     class main
@@ -6,10 +6,7 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
     group system wakelock
     override
 
-service healthd /system/bin/healthd
-    setenv UEVENT_NETLINK_GROUPS 0xFFFFFFFD
-    setenv LD_PRELOAD /usr/libexec/droid-hybris/system/lib64/libcutils.so
-    class hal
-    critical
-    group root system wakelock
+service vendor.audio-hal android.hardware.audio.service_DISABLED
+    disabled
+    oneshot
     override
