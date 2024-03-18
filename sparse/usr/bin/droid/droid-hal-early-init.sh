@@ -24,3 +24,5 @@ ln -s /usr/lib64/pulse-14.2/modules/libdroid-util.so /usr/lib64/pulseaudio/libdr
 
 # Fixed jail properties for HW codecs.
 # mount --bind /etc/codec2.vendor.base.policy /vendor/etc/seccomp_policy/codec2.vendor.base.policy
+#
+sh /usr/bin/droid/stune-fix.sh

@@ -115,6 +115,7 @@
 /usr/share/ngfd/plugins.d/51-ffmemless.ini
 /usr/share/ssu/features.d/add-repos.ini
 /var/lib/environment/compositor/droid-hal-miatoll.conf
+/var/lib/mce/builtin-gconf.values
 /system/system/etc/ld.config.arm64.txt
 /odm/etc
 /odm/lib/libandroidicu.so
