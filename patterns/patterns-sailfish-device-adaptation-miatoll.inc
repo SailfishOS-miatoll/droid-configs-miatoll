@@ -89,9 +89,9 @@ Requires: usb-moded
 Requires: rfkill
 
 # Enable home encryption
-# Requires: droid-hwcrypt
-# Requires: sailfish-device-encryption-community
-# Requires: sailfish-device-encryption-community-droid
+Requires: droid-hwcrypt
+Requires: sailfish-device-encryption-community
+Requires: sailfish-device-encryption-community-droid
 
 # For GPS
 Requires: geoclue-provider-hybris
