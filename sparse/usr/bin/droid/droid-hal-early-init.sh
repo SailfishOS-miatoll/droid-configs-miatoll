@@ -22,6 +22,7 @@ mount -o ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337  /dev/sde5    
 mount --bind /etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml
 ln -s /usr/lib64/pulse-14.2/modules/libdroid-util.so /usr/lib64/pulseaudio/libdroid-util.so
 
+
 # Fixed jail properties for HW codecs.
 # mount --bind /etc/codec2.vendor.base.policy /vendor/etc/seccomp_policy/codec2.vendor.base.policy
 #

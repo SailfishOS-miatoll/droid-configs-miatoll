@@ -25,10 +25,11 @@ Requires: libhybris-libvibrator
 # Bluetooth
 Requires: bluebinder
 
-#Fingerprintd
-# Requires: sailfish-devicelock-fpd
+# Fingerprint
+Requires: sailfish-devicelock-fpd
 Requires: sailfish-fpd-community
 Requires: droid-biometry-fp
+Obsoletes: jolla-devicelock-daemon-encpartition
 
 # Telephony
 Requires: ofono-ril-binder-plugin
@@ -62,8 +63,6 @@ Requires: pulseaudio-modules-droid-hidl
 # to fix non-responding Camera app and/or voice during a phone call:
 Requires: audiosystem-passthrough-dummy-af
 
-# Requires: miniaudiopolicy
-
 # for audio recording to work:
 Requires: qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
@@ -90,9 +89,9 @@ Requires: usb-moded
 Requires: rfkill
 
 # Enable home encryption
-Requires: droid-hwcrypt
-Requires: sailfish-device-encryption-community
-Requires: sailfish-device-encryption-community-droid
+# Requires: droid-hwcrypt
+# Requires: sailfish-device-encryption-community
+# Requires: sailfish-device-encryption-community-droid
 
 # For GPS
 Requires: geoclue-provider-hybris
