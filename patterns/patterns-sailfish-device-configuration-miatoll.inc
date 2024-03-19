@@ -35,6 +35,11 @@ Requires: jolla-settings-accounts-extensions-google
 # Required for Jolla Store Access
 Requires: patterns-sailfish-consumer-generic
 
+# For devices which support NFC
+Requires: jolla-settings-system-nfc
+Requires: nfcd-dbuslog-plugin
+Requires: nfcd-mce-plugin
+
 # For Mozilla location services (online)
 Requires: geoclue-provider-mlsdb
 
@@ -42,9 +47,11 @@ Requires: geoclue-provider-mlsdb
 # to improve camera startup times and the like
 Requires: mapplauncherd-booster-silica-qt5-media
 
+# Fix asspain
+Requires: fish
+
 # Add pre-installed some jolla/sailfish apps
 Requires: harbour-storeman
-Requires: fish
 
 %description -n patterns-sailfish-device-configuration-miatoll
 Pattern with packages for miatoll configurations

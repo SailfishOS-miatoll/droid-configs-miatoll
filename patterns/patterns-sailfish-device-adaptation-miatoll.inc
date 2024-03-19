@@ -26,6 +26,7 @@ Requires: libhybris-libvibrator
 Requires: bluebinder
 
 #Fingerprintd
+# Requires: sailfish-devicelock-fpd
 Requires: sailfish-fpd-community
 Requires: droid-biometry-fp
 
@@ -47,7 +48,7 @@ Requires: sailfish-connman-plugin-suspend
 Requires: hybris-libsensorfw-qt5-binder
 
 # Vibra
-Requires: qt5-feedback-haptics-ffmemless
+Requires: ngfd
 Requires: libngf-qt5-qtfeedback
 
 # Needed for /dev/touchscreen symlink
@@ -60,6 +61,8 @@ Requires: pulseaudio-modules-droid-hidl
 # audiosystem-passthrough in qti mode (e.g. >=Android 9 Qualcomm),
 # to fix non-responding Camera app and/or voice during a phone call:
 Requires: audiosystem-passthrough-dummy-af
+
+# Requires: miniaudiopolicy
 
 # for audio recording to work:
 Requires: qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
@@ -86,13 +89,10 @@ Requires: usb-moded
 # hammerhead, grouper, and maguro use this in scripts, so include for all
 Requires: rfkill
 
-# enable device lock and allow to select untrusted software
-Requires: jolla-devicelock-daemon-encsfa
-
 # Enable home encryption
-# Requires: droid-hwcrypt
-# Requires: sailfish-device-encryption-community
-# Requires: sailfish-device-encryption-community-droid
+Requires: droid-hwcrypt
+Requires: sailfish-device-encryption-community
+Requires: sailfish-device-encryption-community-droid
 
 # For GPS
 Requires: geoclue-provider-hybris
