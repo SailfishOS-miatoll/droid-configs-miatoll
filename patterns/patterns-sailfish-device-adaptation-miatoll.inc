@@ -113,6 +113,7 @@ Requires: nfcd-binder-plugin
 #Requires: libqt5sparql-tracker-direct
 
 # Usb-Tethering
+Requires: usb-moded-defaults-android
 Requires: usb-moded-connection-sharing-android-connman-config
 
 # Tools
