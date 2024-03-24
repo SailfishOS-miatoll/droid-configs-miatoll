@@ -19,7 +19,6 @@ repo --name=apps-@RELEASE@ --baseurl=https://releases.jolla.com/jolla-apps/@RELE
 repo --name=customer-jolla-@RELEASE@ --baseurl=https://releases.jolla.com/features/@RELEASE@/customers/jolla/@ARCH@/
 repo --name=hotfixes-@RELEASE@ --baseurl=https://releases.jolla.com/releases/@RELEASE@/hotfixes/@ARCH@/
 repo --name=jolla-@RELEASE@ --baseurl=https://releases.jolla.com/releases/@RELEASE@/jolla/@ARCH@/
-repo --name=sailfishos-chum-@RELEASE@ --baseurl=https://repo.sailfishos.org/obs/sailfishos:/chum/4.5.0.25_aarch64/
 repo --name=sailfishos-crypt-@RELEASE@ --baseurl=https://repo.sailfishos.org/obs/nemo:/devel:/hw:/sony:/tama:/aosp10/sailfish_latest_aarch64/
 
 %packages

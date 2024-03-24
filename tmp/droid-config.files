@@ -79,8 +79,6 @@
 /etc/libncicore.conf
 /etc/mce/60-doubletap-jolla.ini
 /etc/ofono/binder.d/dual-sim.conf
-/etc/ofono/binder.d/latest-driver.conf
-/etc/ofono/ril_subscription.conf
 /etc/ofono/binder.conf
 /etc/sailfish-device-encryption-community/devices.ini
 /etc/selinux/config
@@ -99,7 +97,8 @@
 /etc/systemd/system/droid-bootctl.service
 /etc/profile.d/devel-su-sudo-alias.sh
 /etc/sysctl.d/99-cachyos-settings.conf
-/etc/usb-moded/usb-moded-configfs-miatoll.ini
+/etc/usb-moded/80-use-ask-mode.ini
+/etc/usb-moded/99-usb-moded-configfs-miatoll.ini
 /usr/bin/droid/doubletap-towake.sh
 /usr/bin/droid/droid-hal-startup.sh
 /usr/bin/droid/droid-hal-early-init.sh
@@ -113,8 +112,7 @@
 /usr/libexec/droid-hybris/system/etc/init/overrides.rc
 /usr/libexec/droid-hybris/system/etc/init/disabled_services_device.rc
 /usr/share/csd/settings.d/hw-settings.ini
-/usr/share/ngfd/plugins.d/51-ffmemless.ini
-/usr/share/ngfd/plugins.d/ngf-vibra-miatoll.ini
+/usr/share/ngfd/plugins.d/51-ngf-vibra-miatoll.ini
 /usr/share/ssu/features.d/add-repos.ini
 /var/lib/environment/compositor/droid-hal-miatoll.conf
 /var/lib/environment/nemo/60-miatoll-vibra.conf

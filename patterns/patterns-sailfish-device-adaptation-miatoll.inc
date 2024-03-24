@@ -94,11 +94,7 @@ Requires: sailfish-device-encryption-community
 Requires: sailfish-device-encryption-community-droid
 
 # For GPS
-# Requires: geoclue-provider-hybris-binder
-
-# For FM radio on some QCOM devices
-# Requires: jolla-mediaplayer-radio
-# Requires: libgbinder-radio
+Requires: geoclue-provider-hybris
 
 # NFC support
 Requires: nfcd-binder-plugin
@@ -106,9 +102,6 @@ Requires: nfcd-binder-plugin
 # Usb-Tethering
 Requires: usb-moded-defaults-android
 Requires: usb-moded-connection-sharing-android-connman-config
-
-# Splash screen
-# Requires: yamuisplash
 
 %description -n patterns-sailfish-device-adaptation-miatoll
 Pattern with packages for miatoll HW Adaptation
