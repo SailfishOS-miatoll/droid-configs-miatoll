@@ -95,6 +95,7 @@
 /etc/sensorfw/sensord-miatoll.conf
 /etc/systemd/system/systemd-ask-password-gui-stop.service.d/50-vendor-hwcomposer-2-4.conf
 /etc/systemd/system/droid-bootctl.service
+/etc/systemd/system/sailfish-device-encryption-community-wizard.service.d/override.conf
 /etc/profile.d/devel-su-sudo-alias.sh
 /etc/sysctl.d/99-cachyos-settings.conf
 /etc/usb-moded/80-use-ask-mode.ini
@@ -106,7 +107,6 @@
 /usr/bin/logcat
 /usr/lib/systemd/system/doubletap-towake.service
 /usr/lib/systemd/system/graphical.target.wants/doubletap-towake.service
-/usr/lib/systemd/system/droid-hal-init.service
 /usr/libexec/droid-hybris/system/etc/init/android.hardware.media.omx@1.0-service.rc
 /usr/libexec/droid-hybris/system/etc/init/init_device.rc
 /usr/libexec/droid-hybris/system/etc/init/overrides.rc
