@@ -51,7 +51,8 @@ Requires: mapplauncherd-booster-silica-qt5-media
 Requires: fish
 
 # Add pre-installed some jolla/sailfish apps
-Requires: harbour-storeman
+Requires: harbour-storeman-installer
+Requires: sailfishos-chum-gui-installer
 
 %description -n patterns-sailfish-device-configuration-miatoll
 Pattern with packages for miatoll configurations

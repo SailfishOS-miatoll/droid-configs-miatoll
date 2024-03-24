@@ -3,6 +3,6 @@
 /etc/dconf/db/vendor.d/screen-rotation.txt
 /etc/dconf/db/vendor.d/silica-configs.txt
 /etc/dconf/db/vendor.d/lipstick-configs.txt
-/etc/dconf/db/vendor.d/jolla-camera-hw.txt
 /etc/dconf/db/vendor.d/lipstick-configs.txt
 /etc/dconf/db/vendor.d/custom-defaults.txt
+/etc/dconf/db/vendor.d/jolla-camera-hw.txt

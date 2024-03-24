@@ -94,30 +94,18 @@ Requires: rfkill
 # Requires: sailfish-device-encryption-community-droid
 
 # For GPS
-Requires: geoclue-provider-hybris
+# Requires: geoclue-provider-hybris-binder
 
 # For FM radio on some QCOM devices
-#Requires: qt5-qtmultimedia-plugin-mediaservice-irisradio
-Requires: jolla-mediaplayer-radio
-Requires: libgbinder-radio
+# Requires: jolla-mediaplayer-radio
+# Requires: libgbinder-radio
 
 # NFC support
-# 1. binder plugin requires Android 8 or a newer base
-# 2. pn54x plugin talks directly to pn54x driver
-# These plugins are mutually exclusive, you need to pick one:
 Requires: nfcd-binder-plugin
-# Requires: nfcd-pn54x-plugin
-
-# Aliendalvik
-#Requires: lxc
-#Requires: libqt5sparql-tracker-direct
 
 # Usb-Tethering
 Requires: usb-moded-defaults-android
 Requires: usb-moded-connection-sharing-android-connman-config
-
-# Tools
-Requires: libgbinder-tools
 
 # Splash screen
 # Requires: yamuisplash
