@@ -16,8 +16,8 @@ ExecStartPre=-/bin/sh /usr/bin/droid/droid-hal-early-init.sh
 ExecStart=/bin/sh /usr/bin/droid/droid-hal-startup.sh
 ExecStop=/bin/sh /usr/bin/droid/droid-hal-shutdown.sh
 # For encryption
-# ExecStartPost=/system/bin/stop vendor.hwcomposer-2-4
-# ExecStartPost=/system/bin/start vendor.hwcomposer-2-4
+ExecStartPost=/system/bin/stop vendor.hwcomposer-2-4
+ExecStartPost=/system/bin/start vendor.hwcomposer-2-4
 Restart=always
 # Lets make sure we don't block minutes in case of errors.
 TimeoutSec=15
