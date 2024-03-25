@@ -114,7 +114,6 @@
 /usr/libexec/droid-hybris/system/etc/init/disabled_services_device.rc
 /usr/share/csd/settings.d/hw-settings.ini
 /usr/share/ngfd/plugins.d/51-ffmemless.ini
-/usr/share/ssu/features.d/20-sf.devpins.org.ini
+/usr/share/ssu/repos.d/20-sf.devpins.org.ini
 /var/lib/environment/compositor/droid-hal-miatoll.conf
 /var/lib/mce/builtin-gconf.values
-/usr/share/ssu/features.d/adaptation-community.ini
