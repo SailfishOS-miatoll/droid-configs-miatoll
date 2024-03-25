@@ -1,0 +1,9 @@
+CPUCHECK_STRING="Qualcomm Technologies, Inc ATOLL-AB"
+
+PART_1="boot"
+PART_52="dtbo"
+
+PART_REAL_1="sde51"
+PART_REAL_52="sde52"
+
+PART_I="1 52"

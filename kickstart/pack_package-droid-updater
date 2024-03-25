@@ -36,7 +36,7 @@ fi
 mkdir updater/
 mv $GEN_IMG_BASE.tar.bz2 updater/$DST_IMG
 cp -r ../hybris/hybris-installer/hybris-installer/* updater/
-cp ../out/target/product/%DEVICE%/system/bin/bzip2 updater/
+cp ../out/target/product/$DEVICE/system/bin/bzip2 updater/
 
 # Update install script with image details
 LOS_VER="18.1"

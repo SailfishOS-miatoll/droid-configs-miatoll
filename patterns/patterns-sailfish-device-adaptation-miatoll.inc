@@ -5,6 +5,7 @@
 Summary: Jolla HW Adaptation miatoll
 Requires: droid-hal-miatoll
 Requires: droid-hal-miatoll-img-boot
+Requires: droid-hal-miatoll-kernel
 Requires: droid-hal-miatoll-kernel-dtbo
 Requires: droid-hal-miatoll-kernel-modules
 Requires: droid-config-miatoll-sailfish

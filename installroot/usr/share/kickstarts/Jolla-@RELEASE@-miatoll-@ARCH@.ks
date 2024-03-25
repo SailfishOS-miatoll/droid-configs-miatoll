@@ -191,6 +191,7 @@ fi
 mkdir updater/
 mv $GEN_IMG_BASE.tar.bz2 updater/$DST_IMG
 cp -r ../hybris/hybris-installer/hybris-installer/* updater/
+cp ../out/target/product/$DEVICE/system/bin/bzip2 updater/
 
 # Update install script with image details
 LOS_VER="18.1"
@@ -207,10 +208,8 @@ popd # sfe-$DEVICE-$RELEASE_ID
 rm -rf updater/
 
 # Calculate some checksums for the generated zip
-printf "[hybris-installer] Calculating MD5, SHA1 & SHA256 checksums for '$DST_PKG.zip'..."
-#md5sum $DST_PKG.zip > $DST_PKG.zip.md5sum
-#sha1sum $DST_PKG.zip > $DST_PKG.zip.sha1sum
-#sha256sum $DST_PKG.zip > $DST_PKG.zip.sha256sum
+printf "[hybris-installer] Calculating MD5 checksum for '$DST_PKG.zip'..."
+md5sum $DST_PKG.zip > $DST_PKG.zip.md5sum
 echo " DONE!"
 
 popd # hadk source tree
