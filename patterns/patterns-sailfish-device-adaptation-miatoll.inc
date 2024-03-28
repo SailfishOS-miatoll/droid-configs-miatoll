@@ -105,6 +105,9 @@ Requires: nfcd-binder-plugin
 Requires: usb-moded-defaults-android
 Requires: usb-moded-connection-sharing-android-connman-config
 
+# wait_hwcomposer script
+Requires: libgbinder-tools
+
 %description -n patterns-sailfish-device-adaptation-miatoll
 Pattern with packages for miatoll HW Adaptation
 
