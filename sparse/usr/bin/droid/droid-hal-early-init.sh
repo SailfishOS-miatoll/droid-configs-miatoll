@@ -26,4 +26,7 @@ mount --bind /vendor/lib64/libqtigef.so /vendor/lib/libqtigef.so
 mount --bind /vendor/lib64/soundfx/libqcompostprocbundle.so /vendor/lib/soundfx/libqcompostprocbundle.so
 mount --bind /vendor/lib64/soundfx/libqcomvisualizer.so /vendor/lib/soundfx/libqcomvisualizer.so
 
+# Android home
+mount --bind /data/media/0/ /storage/self/primary
+
 sh /usr/bin/droid/stune-fix.sh
