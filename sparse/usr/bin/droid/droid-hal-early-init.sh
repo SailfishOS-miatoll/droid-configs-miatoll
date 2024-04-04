@@ -1,6 +1,5 @@
 #/bin/sh
 
-mv /system /system_root
 mkdir -p /system /vendor /product /system_ext /metadata /odm
 
 # Binding mountpoints to sailfish used directories.
@@ -25,8 +24,5 @@ ln -s /usr/lib64/pulse-14.2/modules/libdroid-util.so /usr/lib64/pulseaudio/libdr
 mount --bind /vendor/lib64/libqtigef.so /vendor/lib/libqtigef.so
 mount --bind /vendor/lib64/soundfx/libqcompostprocbundle.so /vendor/lib/soundfx/libqcompostprocbundle.so
 mount --bind /vendor/lib64/soundfx/libqcomvisualizer.so /vendor/lib/soundfx/libqcomvisualizer.so
-
-# Android home
-mount --bind /data/media/0/ /storage/self/primary
 
 sh /usr/bin/droid/stune-fix.sh
