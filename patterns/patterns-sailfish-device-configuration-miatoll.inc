@@ -47,9 +47,6 @@ Requires: geoclue-provider-mlsdb
 # to improve camera startup times and the like
 Requires: mapplauncherd-booster-silica-qt5-media
 
-# Fix asspain
-Requires: fish
-
 %description -n patterns-sailfish-device-configuration-miatoll
 Pattern with packages for miatoll configurations
 

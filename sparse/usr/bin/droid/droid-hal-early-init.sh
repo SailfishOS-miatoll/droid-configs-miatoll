@@ -1,8 +1,5 @@
 #/bin/sh
 
-mkdir -p /metadata
-mount -o noatime,nosuid,nodev,discard    /dev/sda12   /metadata
-
 # Sound fix.
 ln -s /usr/lib64/pulse-14.2/modules/libdroid-util.so /usr/lib64/pulseaudio/libdroid-util.so
 # Make pulseaudio happy!
