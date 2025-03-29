@@ -34,12 +34,10 @@ Requires: droid-biometry-fp
 Obsoletes: jolla-devicelock-daemon-encpartition
 
 # Telephony
-Requires: ofono-ril-binder-plugin
+Requires: ofono-binder-plugin
 Requires: dummy_netd
-
-Provides: ofono-configs
-Obsoletes: ofono-configs-mer
-Obsoletes: ofono-configs-binder
+Requires: modem_auto_config
+Requires: ofono-vendor-qti-radio-plugin
 
 # For torch
 Requires: jolla-settings-system-flashlight
@@ -88,12 +86,12 @@ Requires: mce-plugin-libhybris
 Requires: usb-moded
 
 # hammerhead, grouper, and maguro use this in scripts, so include for all
-Requires: rfkill
+# Requires: rfkill
 
 # Enable home encryption
-#Requires: droid-hwcrypt
-#Requires: sailfish-device-encryption-community
-#Requires: sailfish-device-encryption-community-droid
+# Requires: droid-hwcrypt
+# Requires: sailfish-device-encryption-community
+# Requires: sailfish-device-encryption-community-droid
 
 # For GPS
 Requires: geoclue-provider-hybris
@@ -106,7 +104,7 @@ Requires: usb-moded-defaults-android
 Requires: usb-moded-connection-sharing-android-connman-config
 
 # wait_hwcomposer script
-Requires: libgbinder-tools
+# Requires: libgbinder-tools
 
 %description -n patterns-sailfish-device-adaptation-miatoll
 Pattern with packages for miatoll HW Adaptation
