@@ -86,7 +86,7 @@ Requires: mce-plugin-libhybris
 Requires: usb-moded
 
 # hammerhead, grouper, and maguro use this in scripts, so include for all
-# Requires: rfkill
+Requires: rfkill
 
 # Enable home encryption
 # Requires: droid-hwcrypt

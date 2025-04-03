@@ -17,8 +17,10 @@ repo --name=adaptation-common-miatoll-@RELEASE@ --baseurl=https://releases.jolla
 repo --name=adaptation0-miatoll-@RELEASE@ --baseurl=https://sf.devpins.org/@RELEASE@/xiaomi-miatoll/@ARCH@
 repo --name=apps-@RELEASE@ --baseurl=https://releases.jolla.com/jolla-apps/@RELEASE@/@ARCH@/
 repo --name=customer-jolla-@RELEASE@ --baseurl=https://releases.jolla.com/features/@RELEASE@/customers/jolla/@ARCH@/
+repo --name=harbour-storeman-obs-@RELEASE@ --baseurl=https://repo.sailfishos.org/obs/home:/olf:/harbour-storeman/5.0_@ARCH@
 repo --name=hotfixes-@RELEASE@ --baseurl=https://releases.jolla.com/releases/@RELEASE@/hotfixes/@ARCH@/
 repo --name=jolla-@RELEASE@ --baseurl=https://releases.jolla.com/releases/@RELEASE@/jolla/@ARCH@/
+repo --name=sailfishos-chum-@RELEASE@ --baseurl=https://repo.sailfishos.org/obs/sailfishos:/chum/@RELEASE@_@ARCH@
 
 %packages
 patterns-sailfish-device-configuration-miatoll

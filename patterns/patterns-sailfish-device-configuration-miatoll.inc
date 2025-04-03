@@ -25,8 +25,15 @@ Requires: jolla-settings-system-nfc
 Requires: nfcd-dbuslog-plugin
 Requires: nfcd-mce-plugin
 
-# Storeman
+# Stores
 Requires: harbour-storeman
+Requires: sailfishos-chum-gui
+
+# Updater
+Requires: sfos-upgrade
+
+# Shell
+Requires: fish
 
 # Introduced starting Sailfish OS 2.0.4.x:
 # 3rd party accounts like Twitter, VK, cloud services, etc
