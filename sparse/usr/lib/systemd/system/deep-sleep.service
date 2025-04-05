@@ -1,0 +1,12 @@
+[Unit]
+Description=Change deep sleep mode
+After=droid-hal-init.service init-done.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStartPre=/bin/sleep 5                               
+ExecStart=/bin/bash -c 'echo deep > /sys/power/mem_sleep'
+         
+[Install]                 
+WantedBy=multi-user.target
